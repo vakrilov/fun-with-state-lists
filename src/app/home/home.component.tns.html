@@ -2,9 +2,9 @@
     <Label class="h1" row="0" [text]="'Welcome to ' + title + '!'" textWrap="true"></Label>
     <Label class="h2" row="1" text="Select Some Items"></Label>
 
-    <ScrollView row="2">
-        <StackLayout>
-            <app-item *ngFor="let item of items" [item]="item"></app-item>
-        </StackLayout>
-    </ScrollView>
+    <ListView row="2" [items]="items">
+        <ng-template let-item="item">
+            <app-item [item]="item"></app-item>
+        </ng-template>
+    </ListView>
 </GridLayout>
