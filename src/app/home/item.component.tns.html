@@ -1,0 +1,7 @@
+<StackLayout orientation="horizontal" (tap)="selected = !selected" class="item">
+    <Label [text]="item.name"></Label>
+    <Label class="select-btn" 
+        [class.selected]="selected"
+        [text]="selected ? 'selected' : 'unselected'">
+    </Label>
+</StackLayout>
