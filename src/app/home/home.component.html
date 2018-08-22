@@ -2,4 +2,5 @@
 <h1>Welcome to {{ title }}!</h1>
 <h2>Now select some items </h2>
 
+<button (click)="checkout()">checkout</button>
 <app-item *ngFor="let item of items" [item]="item"></app-item>

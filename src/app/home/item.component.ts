@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Item } from './item.service';
 import { attachViewState } from '../../view-state-utils';
 
-interface ItemViewState {
+export interface ItemViewState {
   selected?: boolean;
 }
 const ItemViewStateFactory = () => { return { selected: false } };
